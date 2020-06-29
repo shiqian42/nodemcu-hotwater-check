@@ -1,7 +1,8 @@
+require "core"
+
 -- FineToilet --
 -- Toilet Monitor --
 -- author:shiqian42
--- updated: 2020/06/24 17:18 --
 
 -- Define --
 DOOR_STATUS = 0
@@ -9,18 +10,14 @@ DOOR_PIN = 1
 MONITOR_RSSI = 0
 MAC_ADD = nil
 CONTENT_TYPE = 'Content-Type: application/json\r\n'
-PUBLISH_URL_API = ''
-
-URL_API = 'https://tomcat.zyee.me/happy/api/water/status'
-
 
 -- Set GPIO Mode INPUT --
 gpio.mode(DOOR_PIN, gpio.INPUT)
 
 -- WiFI Configuration --
 station_cfg={}
-station_cfg.ssid="fanruan"
-station_cfg.pwd="fanruan234567"
+station_cfg.ssid = core.SSID_CON
+station_cfg.pwd = core.SSID_PASSWD
 
 -- Get Mac as unique Device Code--
 getMac()
