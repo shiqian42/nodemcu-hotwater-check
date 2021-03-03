@@ -1,8 +1,8 @@
 core = {}
 
 core.PUBLISH_URL_API = ''
-core.URL_API = 'https://tomcat.zyee.me/happy/api/water/status'
+core.URL_API = ''
 core.SSID_CON = "fanruan"
-core.SSID_PASSWD = "fanruan234567"
+core.SSID_PASSWD = ""
 
 return core
